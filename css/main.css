@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Beau+Rivage&family=Dongle&family=Gamja+Flower&family=Kalnia+Glaze:wght@100..700&family=Nanum+Myeongjo&family=Notable&family=Sansita+Swashed:wght@300..900&family=Unbounded:wght@200..900&display=swap');
+html, body{height: 100%;}
+body{
+    font-family: "Kalnia Glaze", serif;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style: normal;
+    
+}
+*{margin: 0 ; padding: 0; box-sizing: border-box;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+
+#wrap{width: 1920px;height: 100%;position: relative;}
+
+/* POP 영역 */
+.up_pop{width:500px;height:300px;background-image: url(../IMG/summer\ event.jpg);
+    position: absolute;top: 150px;left: 70px;z-index: 1000000; font-family: "Kanit", sans-serif;}
+.p_box{}
+.p_txt{text-align: center; font-size: 55px; text-shadow: 2px 2px rgb(236, 5, 59); color: rgb(31, 19, 250); }
+.p_btn{background-color: #f34378;color: wheat;border: none;width: 60px;
+height: 30px; border-radius: 50px;font-weight: bold;  position: absolute;bottom:5% ;right: 43%;}
+.center_pop{width:500px;height:300px;background-image: url(../IMG/centepop.jpg);
+    position: absolute;top: 10px;left: 30px;z-index: 100000;background-size: cover;font-family: "Kanit", sans-serif;}
+.p_btn:hover{background-color: gray;cursor: pointer;}
+
+/*header영역  */
+.header{width: 100%;height: 190px; background-color:white; position:fixed; left: 0;top:0; z-index: 1000;}
+.header_inner{display: flex; justify-content: space-around;}
+.logo{background-image: url(../IMG/82.jpg);background-size:contain;width: 300px; height: 130px;
+    background-repeat: no-repeat;text-indent: -9999px;margin: 0 auto; cursor: pointer;}
+.nav{margin-bottom: 100px;}
+.menu{position: relative;}
+.menu li{display: inline-block; margin:  20px;}
+.menu li a{display: block; font-size: 20px;}
+.menu li a:hover{text-decoration: underline 3px #f34378; }
+/* .s_menu{}
+.s_menu li{}
+.s_menu li a{display: block; display: none;} */
+
+
+/* main_img 영역*/
+.main_img{width: 100%; height: 100%; padding-top: 5px; /* border: 1px solid red; */position: relative;}
+.m_logo{position: absolute;left:19%;top: 50%;font-size: 143px;text-align: center center;/* display: none; */ z-index: 3;}
+.m_img{height: 770px; position: absolute;top: 190px; z-index: 2;}
+.m_sub_img{position:absolute; top: 190px; width: 100%;height: 770px; /* border: 1px solid red ; */ margin: 0 auto;/* display: none; */
+    transform: rotate(-3deg); 
+    animation: anini 2s forwards ;
+    z-index: 3;
+    position: absolute;
+}
+@keyframes anini{
+    0%{transform: rotate(-3deg);}
+    50%{transform: rotate(3deg);}
+    100%{ transform: rotate(0deg);}
+}
+
+.m_sub_img li{width: 300px;height: 200px; background-size: contain;background-repeat: no-repeat;border-radius:10;cursor: pointer; transition: all 1s }
+.m_sub_img li a{display: block; text-indent: -99999px; }
+
+
+
+.m_sub_img .img1{background-image: url(../IMG/가족사진/11-1.jpg);position: absolute;left: 50%;top:50%;transform:rotate(15deg);opacity: 0.5;animation: ani1  3s 2s infinite}
+.m_sub_img .img2{background-image: url(../IMG/컬러플/15531f928a15d.jpg);position: absolute;left: 60%;top:20%;transform:rotate(20deg);opacity: 0.5;animation: ani  3s 1.3s infinite}
+.m_sub_img .img3{background-image: url(../IMG/홀로/c11.jpg);position: absolute;left: 30%;top:65%;;opacity: 0.5;animation: ani  3s 3s infinite}
+.m_sub_img .img4{background-image: url(../IMG/가족사진/8-2-4.jpg);position: absolute;left: 30%;top:30%;transform:rotate(-10deg);opacity: 0.5; animation: ani2  3s 1.3s infinite}
+.m_sub_img .img5{background-image: url(../IMG/가족사진/11-5.jpg);position: absolute;right: 27%;bottom:48px;opacity: 0.5 ; animation: ani  3s 1s infinite}
+.m_sub_img .img6{background-image: url(../IMG/우정/12-1.jpg);position: absolute;left: 23%;top:25%;transform:rotate(15deg);opacity: 0.5; animation: ani1  3s 2s infinite}
+.m_sub_img .img7{background-image: url(../IMG/우정/a1.jpg);position: absolute;right: 40%;bottom:60%;transform:rotate(-30deg);opacity: 0.5; animation: ani  3s 3s infinite}
+.m_sub_img .img8{background-image: url(../IMG/우정/a2.jpg);position: absolute;right: 18%;top:30%;transform:rotate(10deg);opacity: 0.5; animation: ani 3s 0.5s }
+.m_sub_img .img9{background-image: url(../IMG/우정/a3jpg);position: absolute;right: 50%;top:50%;transform:rotate(-10deg);opacity: 0.5; animation: ani1  3s 2.1s infinite}
+.m_sub_img .img10{background-image: url(../imgimg/13-1.jpg);position: absolute;left: 44%;bottom:8%;transform:rotate(10deg);opacity: 0.5; animation: ani2  3s 1.5s infinite}
+.m_sub_img .img11{background-image: url(../imgimg/13-2.jpg.jpg);position: absolute;left: 35%;top:50%;transform:rotate(20deg);opacity: 0.5; animation: ani  3s 2s infinite}
+.m_sub_img .img12{background-image: url(../imgimg/13-3.jpg);position: absolute;right: 18%;top:57%;transform:rotate(40deg);opacity: 0.5; animation: ani  3s 2s infinite}
+.m_sub_img .img13{background-image: url(../imgimg/13-4.jpg);position: absolute;left: 23%;top:46%;transform:rotate(-10deg);opacity: 0.5; animation: ani1 infinite 3s 2s infinite}
+.m_sub_img .img14{background-image: url(../imgimg/13-5.jpg);position: absolute;right: 30%;bottom:50%;transform:rotate(2deg);opacity: 0.5; animation: ani2 alternate 3s 2s infinite}
+.m_sub_img .img15{background-image: url(../IMG/imgimg/KakaoTalk_20240808_154352149_01.jpg);position: absolute;left: 33%;top:11%;transform:rotate(3deg);opacity: 0.5; animation:ani2 infinite 3s 2s infinite}
+.m_sub_img .img16{background-image: url(../imgimg/13-7.jpg);position: absolute;left: 44%;top:40%;transform:rotate(-30deg);opacity: 0.5; animation: ani  3s 2s infinite}
+.m_sub_img .img17{background-image: url(../IMG/imgimg/KakaoTalk_20240808_154352149.jpg);position: absolute;right: 30%;bottom:68%;transform:rotate(-10deg);opacity: 0.5; animation: ani1  infinite 3s 2s infinite}
+.m_sub_img .img18{background-image: url(../imgimg/13-9.jpg);position: absolute;right: 33%;top:64%;transform:rotate(15deg);opacity: 0.5;animation: ani2 infinite 3s 2s infinite}
+.m_sub_img .img19{background-image: url(../IMG/imgimg/13-10.jpg);position: absolute;right: 48%;top:60%;transform:rotate(15deg);opacity: 0.5;animation: ani2 infinite 3s 2s infinite}
+.m_sub_img .img20{background-image: url(../IMG/imgimg/13-11.jpg);position: absolute;left: 53%;top:45%;transform:rotate(-10deg);opacity: 0.5; animation: ani2  3s 2s infinite}
+.m_sub_img .img21{background-image: url(../imgimg/13-6.jpg);position: absolute;left:58%;top:64%;transform:rotate(-10deg);opacity: 0.5; animation: ani2  3s 2s infinite}
+.m_sub_img .img22{background-image: url(../IMG/홀로/c19.jpg);position: absolute;left:70%;top:40%;transform:rotate(-10deg);opacity: 0.5; animation: ani2  3s 2s infinite}
+.m_sub_img .img22{background-image: url(../IMG/홀로/c8.jpg);position: absolute;left:25%;top:24%;transform:rotate(-10deg);opacity: 0.5; animation: ani2  3s 2s infinite}
+
+.m_sub_img li:hover{opacity: 1; transform: scale(1.1);}
+
+@keyframes ani{
+    0%{transform: rotate(-3deg);opacity: 0.4;}
+    
+    100%{ transform: rotate(3deg);opacity: 0.7;}
+}
+@keyframes ani1{
+    0%{transform: rotate(3deg);opacity: 0.3;}
+    100%{ transform: rotate(-4deg);opacity: 0.7;}
+}
+@keyframes ani2{
+    0%{transform: rotate(3deg);opacity: 0.2;}
+    100%{ transform: rotate(-3deg);opacity: 0.7;}
+}
+/* Graceful Studio 영역*/
+#Graceful_Studio{width: 100%;height: 100%;}
+.g_name{height: 100%;font-size: 40px; text-align: center;position: absolute;left: 50%;top:20% ;}
+
+/* gallery영역 */
+
+#gallery{  width: 100%;/* height: 100%; */
+   /*  border: 1px solid blue; */position: relative;margin-top:100px;}
+#g1{}
+.gimg_list{width: 100%; /* height: 100%; */ 
+
+}
+.g_name1{font-size:50px; text-align: center;}
+.on{margin: 0 auto; width: 80%;height: 100%;display: grid; grid-template-columns: repeat(4,1fr);gap:10px;/* border:  1px solid red; */ }
+.on li{width:100%;height:400px; background-size: cover;background-repeat: no-repeat; margin:5px;  transition: all 0.3s; text-indent: -9999px;}
+
+.g_img1 > li > a{background-position: center center;}
+.g_img2 li a{background-position: center center;}
+.g1_1{background: url(../IMG/홀로/c18.jpg)center center;}
+.g1_2{background: url(../IMG/가족사진/8-82.jpg)center center;}
+.g1_3{background: url(../IMG/홀로/c17.jpg)center center;}
+.g1_4{background: url(../IMG/홀로/c20.jpg)center center;}
+.g1_5{background: url(../IMG/홀로/c21.jpg)center center;}
+.g1_6{background: url(../IMG/가족사진/8-2-3.jpg)center center;}
+.g1_7{background: url(../IMG/가족사진/8-2-2.jpg)center center;}
+.g1_8{background: url(../IMG/가족사진/8-2-1.jpg)center center;}
+.g1_9{background: url(../IMG/우정/a1.jpg)center center;}
+.g1_10{background: url(../IMG/우정/a2.jpg)center center;}
+.g1_11{background: url(../IMG/우정/a3.jpg)center center;}
+.g1_12{background: url(../IMG/우정/a4.jpg)center center;}
+.g1_13{background: url(../IMG/우정/a5.jpg)center center;}
+.g1_14{background: url(../IMG/우정/a6.jpg)center center;}
+.g1_15{background: url(../IMG/우정/a7.jpg)center center;}
+.g1_16{background: url(../IMG/우정/a8.jpg)center center;}
+.g1_17{background: url(../IMG/우정/a9.jpg)center center;}
+.g1_18{background: url(../IMG/우정/a10.jpg)center center;}
+.g1_19{background: url(../IMG/우정/a11.jpg)center center;}
+.g1_20{background: url(../IMG/우정/a12.jpg)center center;}
+.g1_21{background: url(../IMG/우정/a13.jpg)center center;}
+.g1_22{background: url(../IMG/우정/a14.jpg)center center;}
+.g1_23{background: url(../IMG/우정/a15.jpg)center center;}
+.g1_24{background: url(../IMG/우정/a16.jpg)center center;}
+.g1_25{background: url(../IMG/우정/a17.jpg)center center;}
+.g1_26{background: url(../IMG/우정/a18.jpg)center center;}
+.g1_27{background: url(../IMG/우정/a19.jpg)center center;}
+.g1_28{background: url(../IMG/우정/a20.jpg)center center;}
+.g1_29{background: url(../IMG/우정/a21.jpg)center center;}
+.g1_30{background: url(../IMG/커플/b1.jpg)center center;}
+.g1_31{background: url(../IMG/커플/b2.jpg)center center;}
+.g1_32{background: url(../IMG/커플/b3.jpg)center center;}
+.g1_33{background: url(../IMG/커플/b4.jpg)center center;}
+.g1_34{background: url(../IMG/커플/b5.jpg)center center;}
+.g1_35{background: url(../IMG/커플/b6.jpg)center center;}
+.g1_36{background: url(../IMG/커플/b7.jpg)center center;}
+.g1_37{background: url(../IMG/커플/b8.jpg)center center;}
+.g1_38{background: url(../IMG/커플/b9.jpg)center center;}
+.g1_39{background: url(../IMG/커플/b10.jpg)center center;}
+.g1_40{background: url(../IMG/커플/b11.jpg)center center;}
+.g1_41{background: url(../IMG/커플/b12.jpg)center center;}
+.g1_42{background: url(../IMG/커플/b13.jpg)center center;}
+.g1_43{background: url(../IMG/커플/b14.jpg)center center;}
+.g1_44{background: url(../IMG/커플/b15.jpg)center center;}
+.g1_45{background: url(../IMG/홀로/c2.jpg)center center;}
+.g1_46{background: url(../IMG/홀로/c3.jpg)center center;}
+.g1_47{background: url(../IMG/홀로/c4.jpg)center center;}
+.g1_48{background: url(../IMG/홀로/c5.jpg)center center;}
+.g1_49{background: url(../IMG/홀로/c6.jpg)center center;}
+.g1_50{background: url(../IMG/홀로/c7.jpg)center center;}
+.g1_51{background: url(../IMG/홀로/c8.jpg)center center;}
+.g1_52{background: url(../IMG/홀로/c9.jpg)center center;}
+.g1_53{background: url(../IMG/홀로/c10.jpg)center center;}
+.g1_54{background: url(../IMG/홀로/c11.jpg)center center;}
+.g1_55{background: url(../IMG/홀로/c12.jpg)center center;}
+.g1_56{background: url(../IMG/홀로/c13.jpg)center center;}
+.g1_57{background: url(../IMG/홀로/c14.jpg)center center;}
+.g1_58{background: url(../IMG/홀로/c15.jpg)center center;}
+.g1_59{background: url(../IMG/가족사진/8-84.jpg)center center;}
+.g1_60{background: url(../IMG/가족사진/8-2-4.jpg)center center;}
+
+.on li:hover{scale: 1.2; }
+
+/* side_fix */
+.side_fix{
+    border-radius: 20px;
+border: 4px dotted rgb(224, 152, 224) ;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    right: 30px; 
+    top: 400px;
+    width: 100px;
+    height: 400px;
+    background-color:#f1537b;
+    font-size: 10px;
+    z-index: 10000;
+    /* border: 1px solid red; */
+    
+    
+}
+.side_fix{ font-family: "Kanit", sans-serif;}
+.side_fix{}
+.side_inner{  
+    
+    height: 100%;
+    line-height:2;
+    
+
+}
+
+
+
+.s_middle{
+    width: 25%;
+    height: 100%;
+    
+    
+}
+.s_middle h3{display: block;}
+.cs{font-family: "Kanit", sans-serif;
+}
+
+.sns{
+    
+    /* float: left; */
+    width: 20%;
+    height: 100%;
+    justify-content: space-around;
+    justify-items: center;    
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    
+    
+    
+
+    
+    
+}
+.sns li{
+    
+    
+}
+
+
+
+.sns li a{
+    
+}
+.sns li a img{
+    
+    width: 50px;
+    height: 50px;
+    
+    
+}
+.sns li a img:hover{
+    background-color: rgb(196, 17, 115);
+    transform: scale(1.1);
+}
